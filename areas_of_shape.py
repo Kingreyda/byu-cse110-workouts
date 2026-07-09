@@ -4,26 +4,28 @@ Purpose: Areas of shapes
 """
 
 import math
-#Square
-user_number = input("What is the length of a side of a square: ")
-square_side = float(user_number)
-side_1 = square_side ** 2
+#Square section.
+square_length = float(input("\nWhat is the length of a side of a square (in cm)? "))
+square_area_cm = square_length ** 2
 
-print(f"The area of the square is: {side_1:.1f}")
+square_area_m = square_area_cm / 10000
+print(f"\nThe area of the square is: {square_area_cm:.1f} cm^2")
 
-#Rectangle
-length = float(input("What Is the length of a rectangle? "))
-width = float(input("What is the width of the rectangle? "))
+print(f"The square area in meters is: {square_area_m:.1f} m^2")
 
-area_size = length * width
-print(f"The area of the rectangle is: {area_size:.1f}")
+#Rectangle section
+length = float(input("\nWhat Is the length of a rectangle (in cm)? "))
+width = float(input("What is the width of the rectangle (in cm)? "))
+
+rectangle_area_cm = length * width
+
+print(f"\nThe area of the rectangle is: {rectangle_area_cm:.1f} cm^2")
+print(f"The rectangle area in meters: {rectangle_area_cm / 10000:.1f} m^2")
 
 
 #Circle
-radius = float(input("What is the radius of the circle? "))
+radius = float(input("\nWhat is the radius of the circle? "))
 circle_area = 3.14 * (radius ** 2)
-print(f"The area of the circle is: {circle_area:.4f}")
 
-radius = float(input("What is your circle radius? "))
-area = 3.14 * (radius ** 2)
-print(f"Your circle area is: {area}")
+print(f"\nThe area of the circle is: {circle_area:.1f} cm^2")
+print(f"\nYour circle area in meters is: {circle_area /10000} cm^2")
