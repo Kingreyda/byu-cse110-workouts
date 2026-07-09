@@ -23,3 +23,7 @@ print(f"The area of the rectangle is: {area_size:.1f}")
 radius = float(input("What is the radius of the circle? "))
 circle_area = 3.14 * (radius ** 2)
 print(f"The area of the circle is: {circle_area:.4f}")
+
+radius = float(input("What is your circle radius? "))
+area = 3.14 * (radius ** 2)
+print(f"Your circle area is: {area}")
