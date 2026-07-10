@@ -40,7 +40,6 @@ total_formatted = locale.currency(total, grouping=True, symbol=currency_symbol)
 
 print(f"Total: {total_formatted}")
 
-
 #CREATIVITY SECTION - "Tip"
 tip_amount = 0
 
@@ -55,7 +54,7 @@ print(f"\nTip: {tip_formatted}")
 overall_total = total + tip_amount
 overall_total_formatted = locale.currency(overall_total, grouping=True, symbol=currency_symbol)
 
-print(f"Overall total: {overall_total_formatted}")
+print(f"Overall Total: {overall_total_formatted}")
 
 #PAYMENT SECTION
 payment_amount = float(input("\nWhat is the payment amount? "))
