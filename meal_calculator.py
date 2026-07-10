@@ -13,6 +13,7 @@ currency_symbol = "$"
 locale_value = "en_US.UTF-8"
 locale.setlocale(locale.LC_ALL, locale_value)
 
+
 #MEAL SECTION
 child_price = float(input("\nWhat is the price of a child's meal? "))
 adult_price = float(input("What is the price of an adult's meal? "))
@@ -26,19 +27,18 @@ adult_total = adult_price * adult_no
 subtotal = child_total + adult_total
 subtotal_formatted = locale.currency(subtotal, grouping=True, symbol=currency_symbol)
 
-print(f"\nSub-total: {subtotal_formatted}")
+print(f"\nSubtotal: {subtotal_formatted}")
+
 
 #TAX SECTION
 tax_rate = float(input("\nWhat is the sales tax rate? "))
 sales_tax = (tax_rate / 100) * subtotal
 
 sales_tax_formatted = locale.currency(sales_tax, grouping=True, symbol=currency_symbol)
-print(f"\nSales Tax: {sales_tax_formatted}")
+print(f"Sales Tax: {sales_tax_formatted}")
 
 total = sales_tax + subtotal
-total_formatted = locale.currency(total, grouping=True, symbol=currency_symbol)
 
-print(f"Total: {total_formatted}")
 
 #CREATIVITY SECTION - "Tip"
 tip_amount = 0
@@ -54,7 +54,8 @@ print(f"\nTip: {tip_formatted}")
 overall_total = total + tip_amount
 overall_total_formatted = locale.currency(overall_total, grouping=True, symbol=currency_symbol)
 
-print(f"Overall Total: {overall_total_formatted}")
+print(f"Total: {overall_total_formatted}")
+
 
 #PAYMENT SECTION
 payment_amount = float(input("\nWhat is the payment amount? "))
