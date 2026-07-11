@@ -25,7 +25,7 @@ child_total = child_price * child_no
 adult_total = adult_price * adult_no 
 
 subtotal = child_total + adult_total
-subtotal_formatted = locale.currency(subtotal, grouping=True, symbol=currency_symbol)
+subtotal_formatted = locale.currency(subtotal, grouping=True, symbol=True)
 
 print(f"\nSubtotal: {subtotal_formatted}")
 
@@ -34,7 +34,7 @@ print(f"\nSubtotal: {subtotal_formatted}")
 tax_rate = float(input("\nWhat is the sales tax rate? "))
 sales_tax = (tax_rate / 100) * subtotal
 
-sales_tax_formatted = locale.currency(sales_tax, grouping=True, symbol=currency_symbol)
+sales_tax_formatted = locale.currency(sales_tax, grouping=True, symbol=True)
 print(f"Sales Tax: {sales_tax_formatted}")
 
 total = sales_tax + subtotal
