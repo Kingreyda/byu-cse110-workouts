@@ -2,15 +2,18 @@
 Author: Olaribigbe King David
 Purpose: Adventure Game Assignment
 Title: BELLY WALLY: TWO SIDES OF CAMPUS
+
+Description: 
+
+BELLY WALLY: TWO SIDES OF CAMPUS is an interactive adventure game with multiple branching story paths.
+Players may continue as a hungry student or unexpectedly become a Belly Wally student delivery runner.
+The game includes nested decision-making, multiple endings, player titles, and a hidden questionnaire
+that explores food preferences, delivery expectations, and spending habits while maintaining the feel,
+of an adventure game.
 """
 # Creative Addition: 
 # This adventure game has two hidden story paths, depending on the player's choices.
-# The player may continue as a hungry student or unexpectedly become a Belly Wally student delivery runner.
-
-# This game also contains a hidden questionnaire.
-# The player's choices reveal food ordering preferences, delivery expectations,
-# and spending habits while still presenting the experience as an interactive story.
-
+# This game is also an indirect questionnaire for the coming project (Belly Wally).
 # I also added ratings and titles to reward players. 
 
 print("\n===================================")
