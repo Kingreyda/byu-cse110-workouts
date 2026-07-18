@@ -1,3 +1,4 @@
+# Ask the user for information
 print()
 print("Please enter the following information: ")
 print()
@@ -9,6 +10,7 @@ phone_number = input("Phone number: ")
 job_title = input("Job title: ")
 id_number = input("ID number: ")
 
+# Display the ID details
 print("\nThe ID Card is: ")
 print("-----------------------")
 print(f"{last_name.upper()}, {first_name.capitalize()}")
